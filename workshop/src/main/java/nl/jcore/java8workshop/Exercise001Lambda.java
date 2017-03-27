@@ -26,14 +26,14 @@ public class Exercise001Lambda {
      */
     static Predicate<Integer> predicateIsEven() {
         /* A number is even when its remainder for modulo 2 (i % 2) is equal to zero. */
-        return null;
+        return i -> i % 2 == 0;
     }
 
     /**
      * Return a Function which converts its Integer input to a String
      */
     static Function<Integer, String> functionToString() {
-        return null;
+        return String::valueOf;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Exercise001Lambda {
      * expensive, we can postpone execution untill we absolutely have no choice.
      */
     static Supplier<String> supplier() {
-        return null;
+        return () -> "Hello Java 8";
     }
 
     /**
@@ -58,6 +58,6 @@ public class Exercise001Lambda {
      * interface to abstract away where we're sending it to.
      */
     static Consumer<String> consumer() {
-        return null;
+        return System.out::print;
     }
 }
