@@ -13,12 +13,10 @@ public class Lambdas3 {
     public static void main(String[] args) {
         acceptFuncInt(() -> {
         });
-        /**
-         * Lambda's do not work with abstract classes:
-         *
-         * acceptFuncClass(() -> {
-         * });
-        */
+//        Lambda 's do not work with abstract classes:
+//        acceptFuncClass(() -> {
+//        });
+
     }
 
     private static void acceptFuncInt(final FuncInt funcInt) {
